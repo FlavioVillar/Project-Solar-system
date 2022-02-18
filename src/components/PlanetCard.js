@@ -3,6 +3,7 @@ import PropType from 'prop-types';
 
 class PlanetCard extends React.Component {
   render() {
+    // ! Refatorar - colocar os 2 na mesma props.
     const { planetName } = this.props;
     const { planetImage } = this.props;
     return (
