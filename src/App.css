@@ -1,3 +1,250 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --color1: rgb(0, 231, 255);
+
+  --color2: rgb(255, 0, 231);
+}
+
+body {
+  background-image: url('https://https://conteudo.imguol.com.br/c/noticias/59/2021/04/16/ilustracao-de-foguete-da-spacex-na-lua-em-missao-que-levara-astronautas-novamente-ao-nosso-satelite-natural-1618610283243_v2_4x3.jpg.space/gallery/images/inspiration4-mission/1920x1080.jpg');
+  background-position: bottom;
+
+  /* background-color: rgb(146, 86, 86); */
+  background-repeat: no-repeat;
+  background-size: 10%;
+  color: white;
+  font-family: "'Heebo'" , sans-serif;
   text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  background-image: url('https://assets.codepen.io/13471/sparkles.gif');
+  border-radius: 8% / 50%;
+  box-shadow: -5px -5px 5px 1px var(--color1) , 5px 5px 5px 1px var(--color2);
+  color: white;
+  font-size: 3.5vh;
+  margin: 20px 0;
+  opacity: 0.75;
+  padding: 10px 60px;
+  text-shadow: 1.5px 1.5px 2px rgb(133, 132, 132);
+  z-index: 3;
+}
+
+.container-Title-Planetas {
+  align-items: center;
+  background-color: rgba(154, 191, 197, 0.747);
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: 1.5vw;
+  height: 5vw;
+  justify-content: center;
+  margin-top: 1.5%;
+  position: absolute;
+  text-shadow: 5px 5px 10px black;
+  top: 0;
+  width: 17vw;
+  z-index: 1;
+}
+
+.container-geral-planetas {
+  align-items: center;
+  display: flex;
+  filter: drop-shadow(0 0 50px rgba(250, 39, 39, 0.5));
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.intro-wrap {
+  background-color: rgb(97, 96, 96);
+  clip-path: ellipse(50% 50% at 50% 50%);
+  display: flex;
+}
+
+.intro-background {
+  background: url('https://assets.codepen.io/13471/sparkles.gif');
+  background-size: 32%;
+  height: 43vw;
+  mix-blend-mode: luminosity;
+  opacity: 0.8;
+  width: 97.3vw;
+}
+
+.intro-solar-system {
+  align-items: center;
+  display: flex;
+  filter: drop-shadow(0 0 10px rgba(124, 122, 122, 0.5));
+  height: 43vw;
+  justify-content: center;
+  position: absolute;
+  width: 97.3vw;
+}
+
+[ data-testid = 'solar-system' ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-planetas {
+  align-items: center;
+  display: flex;
+}
+
+[ data-testid = 'planet-card' ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  font-weight: 600;
+  height: 17vw;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 3px rgb(133, 132, 132);
+}
+
+.container-img {
+  align-items: center;
+  display: flex;
+  height: 14vw;
+}
+
+.container-name-planet {
+  align-content: flex-end;
+  display: flex;
+}
+
+img {
+  filter: drop-shadow(0 0 8px #4e4b4b);
+}
+
+img:hover {
+  transform: translateY(-15px);
+  transition: all 0.3s;
+}
+
+.Mercúrio {
+  width: 4vw;
+}
+
+.Vênus {
+  width: 8vw;
+}
+
+.Terra {
+  width: 9vw;
+}
+
+.Marte {
+  width: 5vw;
+}
+
+.Júpiter {
+  width: 18vw;
+}
+
+.Saturno {
+  width: 15vw;
+}
+
+.Urano {
+  width: 12vw;
+}
+
+.Netuno {
+  width: 11vw;
+}
+
+/* ! */
+[ data-testid = 'missions' ] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-Title-Mission {
+  background-color: black;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  color: whitesmoke;
+  display: flex;
+  font-size: 1.8vh;
+  justify-content: center;
+  margin-top: 2%;
+  max-width: 1000px;
+  opacity: 0.75;
+  padding: 10px;
+  text-shadow: 1.5px 1.5px 2px rgb(133, 132, 132);
+  width: 100%;
+
+  /* background-image: url('https://assets.codepen.io/13471/sparkles.gif'); */
+
+  /* color: white; */
+
+  /* box-shadow: -5px -5px 5px 1px var(--color1) , 5px 5px 5px 1px var(--color2); */
+}
+
+.container-card-mission {
+  background-blend-mode: luminosity;
+  background-color: rgb(168, 158, 158);
+  background-image: url('https://www.ufmg.br/espacodoconhecimento/wp-content/uploads/2020/05/history-in-hd-e5eDHbmHprg-unsplash-737x1024.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2%;
+  max-width: 1000px;
+}
+
+
+.container-year-country-destination {
+  margin-top: 5px;
+}
+
+.container-year-country-destination p {
+  padding: 3px 10px;
+  text-align: start;
+}
+
+[ data-testid = 'mission-name' ] {
+  border: 2px solid whitesmoke;
+  border-radius: 0 / 3.5%;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 5px;
+  width: 100%;
+}
+
+.mission-card {
+  background-color: rgb(18, 18, 19);
+  border: 1px solid whitesmoke;
+  border-radius: 5% / 3.5%;
+  color: whitesmoke;
+  height: 15.5vh;
+  margin: 20px;
+  overflow: hidden;
+  width: 20vh;
+}
+
+.mission-card:hover {
+  box-shadow: -5px -5px 5px -3px var(--color1) , 5px 5px 5px -3px var(--color2);
+  transform: translateY(-10px);
+  transition: all 0.2s;
 }
